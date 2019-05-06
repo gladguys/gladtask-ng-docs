@@ -1,0 +1,1028 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gladtask-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gladtask-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ProjectFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/project/project-form/project-form.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>project-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./project-form.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./project-form.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#possibleTeams$">possibleTeams$</a>
+                            </li>
+                            <li>
+                                <a href="#previewImage">previewImage</a>
+                            </li>
+                            <li>
+                                <a href="#project">project</a>
+                            </li>
+                            <li>
+                                <a href="#projectExists">projectExists</a>
+                            </li>
+                            <li>
+                                <a href="#projectForm">projectForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#populateForm">populateForm</a>
+                            </li>
+                            <li>
+                                <a href="#showPreviewImage">showPreviewImage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, userService: <a href="../injectables/UserService.html">UserService</a>, gladService: <a href="../injectables/GladService.html">GladService</a>, projectService: <a href="../injectables/ProjectService.html">ProjectService</a>, notificationService: <a href="../injectables/GTNotificationService.html">GTNotificationService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, teamService: <a href="../injectables/TeamService.html">TeamService</a>, sharedService: <a href="../injectables/SharedService.html">SharedService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>gladService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/GladService.html" target="_self" >GladService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>projectService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/ProjectService.html" target="_self" >ProjectService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>notificationService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/GTNotificationService.html" target="_self" >GTNotificationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>teamService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/TeamService.html" target="_self" >TeamService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sharedService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/SharedService.html" target="_self" >SharedService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onSubmit"></a>
+                        <span class="name">
+                            <b>
+                            onSubmit
+                            </b>
+                            <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onSubmit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="populateForm"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            populateForm
+                            </b>
+                            <a href="#populateForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>populateForm(project: <a href="../classes/Project.html">Project</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:94</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>project</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Project.html" target="_self" >Project</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showPreviewImage"></a>
+                        <span class="name">
+                            <b>
+                            showPreviewImage
+                            </b>
+                            <a href="#showPreviewImage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>showPreviewImage(files)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:80</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>files</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="possibleTeams$"></a>
+                        <span class="name">
+                            <b>
+                            possibleTeams$
+                            </b>
+                            <a href="#possibleTeams$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>possibleTeams$:     <code><a href="../classes/Team.html" target="_self" >Observable&lt;Team[]&gt;</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Team.html" target="_self" >Observable&lt;Team[]&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previewImage"></a>
+                        <span class="name">
+                            <b>
+                            previewImage
+                            </b>
+                            <a href="#previewImage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>previewImage:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="project"></a>
+                        <span class="name">
+                            <b>
+                            project
+                            </b>
+                            <a href="#project"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>project:     <code><a href="../classes/Project.html" target="_self" >Project</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Project.html" target="_self" >Project</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Project()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="projectExists"></a>
+                        <span class="name">
+                            <b>
+                            projectExists
+                            </b>
+                            <a href="#projectExists"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>projectExists:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="projectForm"></a>
+                        <span class="name">
+                            <b>
+                            projectForm
+                            </b>
+                            <a href="#projectForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>projectForm:     <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/pages/project/project-form/project-form.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &quot;@angular/forms&quot;;
+import { ActivatedRoute, Router } from &quot;@angular/router&quot;;
+import { Observable } from &quot;rxjs&quot;;
+
+import { UserService } from &quot;../../../core/services/user.service&quot;;
+import { ProjectService } from &quot;../../../core/services/project.service&quot;;
+import { TeamService } from &#x27;../../../core/services/team.service&#x27;;
+import { GladService } from &quot;../../../core/services/glad.service&quot;;
+import { GTNotificationService } from &quot;../../../shared/components/gt-notification/gt-notification.service&quot;;
+import { SharedService } from &quot;../../../core/services/shared.service&quot;;
+
+import { Project } from &quot;../../../shared/models/project.model&quot;;
+import { Team } from &quot;../../../shared/models/team.model&quot;;
+import { GTConstants } from &quot;../../../GT-constants&quot;;
+
+@Component({
+  selector: &#x27;project-form&#x27;,
+  templateUrl: &#x27;./project-form.component.html&#x27;,
+  styleUrls: [&#x27;./project-form.component.scss&#x27;]
+})
+export class ProjectFormComponent implements OnInit {
+
+	project: Project &#x3D; new Project();
+	previewImage: any;
+	projectForm: FormGroup;
+	possibleTeams$: Observable&lt;Team[]&gt;;
+	projectExists: boolean &#x3D; false;
+
+	constructor(
+		private formBuilder: FormBuilder,
+		private userService: UserService,
+		private gladService: GladService,
+		private projectService: ProjectService,
+		private notificationService: GTNotificationService,
+		private router: Router,
+		private route: ActivatedRoute,
+		private teamService: TeamService,
+		private sharedService: SharedService) { }
+
+	ngOnInit() {
+		this.possibleTeams$ &#x3D; this.teamService.findAllByUser(this.sharedService.getUserLogged().id);
+
+		this.projectForm &#x3D; this.formBuilder.group({
+			&#x27;name&#x27;: [&#x27;&#x27;, [Validators.required]],
+			&#x27;description&#x27;: [&#x27;&#x27;],
+			&#x27;team&#x27;: [&#x27;&#x27;, Validators.required]
+		});
+
+		let id: string &#x3D; this.route.snapshot.params[&#x27;id&#x27;];
+		if (id !&#x3D; undefined) {
+			this.projectService.findById(id).subscribe(project &#x3D;&gt; {
+				this.projectExists &#x3D; true;
+				this.project &#x3D; project;
+				this.populateForm(this.project);
+			}, e &#x3D;&gt; this.router.navigate([&#x27;/task-not-found&#x27;]));
+		} else {
+			this.previewImage &#x3D; GTConstants.GLADIATOR_DEFAULT_PROFILE;
+			this.projectExists &#x3D; true;
+		}
+	}
+
+	onSubmit(): void {
+		const submittedProject &#x3D; this.projectForm.getRawValue() as Project;
+		submittedProject.id &#x3D; this.project.id;
+		if (this.previewImage !&#x3D; null) {
+			submittedProject.projectImage &#x3D; this.previewImage;
+		}
+		this.projectService.createOrUpdate(submittedProject)
+			.subscribe(project &#x3D;&gt; {
+				if (this.project.id !&#x3D; null) {
+					this.gladService.openSnack(&quot;Projeto editado&quot;);
+				} else {
+					this.gladService.openSnack(&quot;Projeto criado&quot;);
+				}
+				this.router.navigate([&#x27;/&#x27;]);
+			}, e &#x3D;&gt; this.notificationService.notificateFailure(&quot;Falha ao criar projeto&quot;));
+	}
+
+	showPreviewImage(files) {
+		if (files.length &#x3D;&#x3D;&#x3D; 0)
+			return;
+
+		let mimeType &#x3D; files[0].type;
+		if (mimeType.match(/image\/*/) &#x3D;&#x3D; null) {
+			return;
+		}
+
+		let reader &#x3D; new FileReader();
+		reader.readAsDataURL(files[0]);
+		reader.onload &#x3D; (e) &#x3D;&gt; this.previewImage &#x3D; reader.result;
+	}
+
+	private populateForm(project: Project) {
+		this.projectForm.patchValue({
+			name: project.name,
+			description: project.description,
+			manager: project.manager,
+			team: project.team,
+			participants: project.participants
+		});
+		this.previewImage &#x3D; project.projectImage;
+	}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div&gt;
+
+	&lt;form
+		fxLayout&#x3D;&quot;row wrap&quot;
+		fxLayoutGap&#x3D;&quot;20px&quot;
+		[formGroup]&#x3D;&quot;projectForm&quot;
+		role&#x3D;&quot;form&quot;
+		(submit)&#x3D;&quot;onSubmit()&quot;&gt;
+
+		&lt;div&gt;
+			&lt;input #fileInput hidden type&#x3D;&quot;file&quot; accept&#x3D;&#x27;image/*&#x27; (change)&#x3D;&quot;showPreviewImage(fileInput.files)&quot;&gt;
+			&lt;div
+				class&#x3D;&quot;image-rounded image--with-hover-msg&quot;
+				(click)&#x3D;&quot;fileInput.click()&quot;
+				[ngStyle]&#x3D;&quot;{&#x27;background-image&#x27;: &#x27;url(&#x27;+ previewImage +&#x27;)&#x27;}&quot;
+				*ngIf&#x3D;&quot;previewImage&quot;&gt;
+			
+				&lt;fa-icon icon&#x3D;&quot;camera&quot;&gt;&lt;/fa-icon&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;mat-form-field
+			fxFlex&#x3D;&quot;1 1 400px&quot;
+			fxFlex.lt-sm&#x3D;&quot;1 1 290px&quot;
+			appearance&#x3D;&quot;outline&quot;&gt;
+
+			&lt;mat-label&gt;Nome do Projeto&lt;/mat-label&gt;
+			&lt;input
+				matInput
+				formControlName&#x3D;&quot;name&quot;
+				required&gt;
+			&lt;gt-form-error *ngIf&#x3D;&quot;projectForm.controls[&#x27;name&#x27;].errors?.required &amp;&amp; !projectForm.controls[&#x27;name&#x27;].pristine&quot;&gt;&lt;/gt-form-error&gt;
+		&lt;/mat-form-field&gt;
+
+		&lt;mat-form-field
+			fxFlex&#x3D;&quot;1 1 600px&quot;
+			fxFlex.lt-sm&#x3D;&quot;1 1 290px&quot;
+			appearance&#x3D;&quot;outline&quot;&gt;
+
+			&lt;mat-label&gt;Descrição&lt;/mat-label&gt;
+			&lt;textarea
+				matInput
+				formControlName&#x3D;&quot;description&quot;
+				required&gt;
+			&lt;/textarea&gt;
+		&lt;/mat-form-field&gt;
+
+		&lt;mat-form-field
+			fxFlex&#x3D;&quot;1 1 300px&quot;
+			fxFlex.lt-sm&#x3D;&quot;1 1 290px&quot;
+			appearance&#x3D;&quot;outline&quot;&gt;
+
+			&lt;mat-label&gt;Equipe&lt;/mat-label&gt;
+			&lt;mat-select
+				formControlName&#x3D;&quot;team&quot;&gt;
+
+				&lt;mat-option *ngFor&#x3D;&quot;let team of (possibleTeams$ | async)&quot; [value]&#x3D;&quot;team&quot;&gt;
+					{{team.name}}
+				&lt;/mat-option&gt;
+			&lt;/mat-select&gt;
+		&lt;/mat-form-field&gt;
+
+
+		&lt;div fxFlex&#x3D;&quot;1 1 100%&quot;&gt;
+			&lt;button
+				mat-flat-button
+				type&#x3D;&quot;submit&quot;
+				class&#x3D;&quot;btn-green&quot;
+				[disabled]&#x3D;&quot;!projectForm.valid&quot;&gt;
+				Salvar
+			&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./project-form.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div>	<form		fxLayout="row wrap"		fxLayoutGap="20px"		[formGroup]="projectForm"		role="form"		(submit)="onSubmit()">		<div>			<input #fileInput hidden type="file" accept=\'image/*\' (change)="showPreviewImage(fileInput.files)">			<div				class="image-rounded image--with-hover-msg"				(click)="fileInput.click()"				[ngStyle]="{\'background-image\': \'url(\'+ previewImage +\')\'}"				*ngIf="previewImage">							<fa-icon icon="camera"></fa-icon>			</div>		</div>		<mat-form-field			fxFlex="1 1 400px"			fxFlex.lt-sm="1 1 290px"			appearance="outline">			<mat-label>Nome do Projeto</mat-label>			<input				matInput				formControlName="name"				required>			<gt-form-error *ngIf="projectForm.controls[\'name\'].errors?.required && !projectForm.controls[\'name\'].pristine"></gt-form-error>		</mat-form-field>		<mat-form-field			fxFlex="1 1 600px"			fxFlex.lt-sm="1 1 290px"			appearance="outline">			<mat-label>Descrição</mat-label>			<textarea				matInput				formControlName="description"				required>			</textarea>		</mat-form-field>		<mat-form-field			fxFlex="1 1 300px"			fxFlex.lt-sm="1 1 290px"			appearance="outline">			<mat-label>Equipe</mat-label>			<mat-select				formControlName="team">				<mat-option *ngFor="let team of (possibleTeams$ | async)" [value]="team">					{{team.name}}				</mat-option>			</mat-select>		</mat-form-field>		<div fxFlex="1 1 100%">			<button				mat-flat-button				type="submit"				class="btn-green"				[disabled]="!projectForm.valid">				Salvar			</button>		</div>	</form></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DialogJustMockup', 'selector': 'dialog-just-mockup'},{'name': 'DueSoonTasksComponent', 'selector': 'due-soon-tasks'},{'name': 'GTDatatableComponent', 'selector': 'gt-datatable'},{'name': 'GTFormErrorComponent', 'selector': 'gt-form-error'},{'name': 'GTFormSuccessComponent', 'selector': 'gt-form-success'},{'name': 'GTNotificationComponent', 'selector': 'gt-notification'},{'name': 'GTSearchComponent', 'selector': 'gt-search'},{'name': 'GTTasksCarouselComponent', 'selector': 'gt-tasks-carousel'},{'name': 'GTToolbarComponent', 'selector': 'gt-toolbar'},{'name': 'GTUserLoggedInfoComponent', 'selector': 'gt-user-logged-info'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InboxComponent', 'selector': 'inbox'},{'name': 'InvitationComponent', 'selector': 'gt-invitation'},{'name': 'KanbanComponent', 'selector': ''},{'name': 'LoginComponent', 'selector': ''},{'name': 'PageNotFoundComponent', 'selector': ''},{'name': 'ProjectFormComponent', 'selector': 'project-form'},{'name': 'ProjectInfoComponent', 'selector': ''},{'name': 'ProjectsHomeComponent', 'selector': 'projects-home'},{'name': 'RecentTasksComponent', 'selector': 'recent-tasks'},{'name': 'SignupComponent', 'selector': ''},{'name': 'TaskCardComponent', 'selector': 'task-card'},{'name': 'TaskChangesComponent', 'selector': 'gt-task-changes'},{'name': 'TaskCommentsComponent', 'selector': 'gt-task-comments'},{'name': 'TaskComponent', 'selector': 'app-task'},{'name': 'TaskDetailComponent', 'selector': 'task-detail'},{'name': 'TaskFormComponent', 'selector': 'task-form'},{'name': 'TaskGridComponent', 'selector': 'task-grid'},{'name': 'TaskListCardViewComponent', 'selector': 'task-list-card-view'},{'name': 'TaskListComponent', 'selector': ''},{'name': 'TaskListGridViewComponent', 'selector': 'task-list-grid-view'},{'name': 'TaskNotFoundComponent', 'selector': 'app-task-not-found'},{'name': 'TaskPreviewComponent', 'selector': 'task-preview'},{'name': 'TasksPerStatusChartComponent', 'selector': 'tasks-per-status-chart'},{'name': 'TeamDetailComponent', 'selector': 'app-team-detail'},{'name': 'TeamFormComponent', 'selector': ''},{'name': 'TeamListSidenavComponent', 'selector': 'team-list-sidenav'},{'name': 'UserInfoComponent', 'selector': ''},{'name': 'UserListComponent', 'selector': 'app-user-list'},{'name': 'UserProjectDashboardComponent', 'selector': 'user-project-dashboard'}];
+    var DIRECTIVES = [{'name': 'AdminOnlyDirective', 'selector': '[adminOnly]'},{'name': 'LoggedOnlyDirective', 'selector': '[loggedOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'ProjectFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProjectFormComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

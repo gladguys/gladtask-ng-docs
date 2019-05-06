@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gladtask-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">gladtask-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="gladtask-front-end-angular-">GLADTASK - FRONT-END (ANGULAR)</h1>
+<h2 id="running-gladtask-ng">Running gladtask-ng</h2>
+<h3 id="development-server">Development server</h3>
+<p>Run <code>npm run start-dev</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
+<h3 id="build">Build</h3>
+<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>--prod</code> flag for a production build.</p>
+<h2 id="configuring-project-to-deploy-on-heroku">Configuring project to deploy on Heroku</h2>
+<h3 id="1-angular-cli-and-compiler">1. Angular CLI and compiler</h3>
+<p>In your package.json, copy</p>
+<p><code>&quot;@angular/cli”: “1.4.9”,
+&quot;@angular/compiler-cli&quot;: &quot;^4.4.6&quot;</code></p>
+<p>from devDependencies to dependencies.</p>
+<h3 id="2-create-postinstall-script-in-package-json">2. Create postinstall script in package.json</h3>
+<p>In package.json, under <em>scripts</em>, add:
+<code>&quot;heroku-postbuild&quot;: &quot;ng build --prod&quot;</code></p>
+<p>This tells Heroku to build the application using Ahead Of Time (AOT) compiler and make it production-ready. </p>
+<h3 id="3-indicates-tools-heroku-should-use-to-build-the-app">3. Indicates tools heroku should use to build the app</h3>
+<p>In package.json, add:</p>
+<div><pre class="line-numbers"><code class="language-none">&quot;engines&quot;: {
+    &quot;node&quot;: &quot;8.10.0&quot;,
+    &quot;npm&quot;: &quot;3.5.2&quot;
+  }</code></pre></div><p>obs: attetion to set the right version. (tip: set it with the version you are running the app in dev mode)</p>
+<h3 id="4-copying-typescript-reference">4. Copying typescript reference</h3>
+<p>copy  &quot;typescript&quot;: &quot;~3.1.6&quot; from devDependencies to dependency in <em>package.json</em></p>
+<h3 id="5-installing-extra-tools">5. Installing extra tools</h3>
+<p><code>npm install enhanced-resolve@3.3.0 --save-dev</code>
+<code>npm install express path --save</code></p>
+<h3 id="6-creating-server-js">6. Creating server.js</h3>
+<p>create file <code>server.js</code> in root of your project</p>
+<p>server.js:</p>
+<div><pre class="line-numbers"><code class="language-javascript">//Install express server
+const express = require(&#39;express&#39;);
+const path = require(&#39;path&#39;);
+
+const app = express();
+
+// Serve only the static files form the dist directory
+app.use(express.static(__dirname + &#39;/dist/&lt;name-of-app&gt;&#39;));
+
+app.get(&#39;/*&#39;, function(req,res) {
+
+res.sendFile(path.join(__dirname+&#39;/dist/&lt;name-of-app&gt;/index.html&#39;));
+});
+
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 4200);</code></pre></div><p>pay attention to <name of project> and port</p>
+<h3 id="7-change-start-command">7. Change start command</h3>
+<p>To make heroku run the server.js file created in 6 section, change the value of start&#39;s script in package.json:</p>
+<p><code>&quot;start&quot;: &quot;node server.js&quot;</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1361 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gladtask-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gladtask-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TaskListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/task/task-list/task-list.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./task-list.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./task-list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cardView">cardView</a>
+                            </li>
+                            <li>
+                                <a href="#taskForm">taskForm</a>
+                            </li>
+                            <li>
+                                <a href="#tasksDelayed">tasksDelayed</a>
+                            </li>
+                            <li>
+                                <a href="#tasksDueToday">tasksDueToday</a>
+                            </li>
+                            <li>
+                                <a href="#tasksFinished">tasksFinished</a>
+                            </li>
+                            <li>
+                                <a href="#tasksNotDueToday">tasksNotDueToday</a>
+                            </li>
+                            <li>
+                                <a href="#today">today</a>
+                            </li>
+                            <li>
+                                <a href="#todayDate">todayDate</a>
+                            </li>
+                            <li>
+                                <a href="#todayDateMilli">todayDateMilli</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addTask">addTask</a>
+                            </li>
+                            <li>
+                                <a href="#getTasksDelayed">getTasksDelayed</a>
+                            </li>
+                            <li>
+                                <a href="#getTasksDueToday">getTasksDueToday</a>
+                            </li>
+                            <li>
+                                <a href="#getTasksFinished">getTasksFinished</a>
+                            </li>
+                            <li>
+                                <a href="#getTasksNotDueToday">getTasksNotDueToday</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#toggleView">toggleView</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(taskService: <a href="../injectables/TaskService.html">TaskService</a>, gladService: <a href="../injectables/GladService.html">GladService</a>, sharedService: <a href="../injectables/SharedService.html">SharedService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, activateRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, datePipe: <a href="https://angular.io/api/common/DatePipe" target="_blank">DatePipe</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>taskService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/TaskService.html" target="_self" >TaskService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>gladService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/GladService.html" target="_self" >GladService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sharedService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/SharedService.html" target="_self" >SharedService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activateRoute</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>datePipe</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/common/DatePipe" target="_blank" >DatePipe</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addTask"></a>
+                        <span class="name">
+                            <b>
+                            addTask
+                            </b>
+                            <a href="#addTask"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>addTask()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:73</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getTasksDelayed"></a>
+                        <span class="name">
+                            <b>
+                            getTasksDelayed
+                            </b>
+                            <a href="#getTasksDelayed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getTasksDelayed(tasks: <a href="../classes/Task.html">Task[]</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:62</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>tasks</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getTasksDueToday"></a>
+                        <span class="name">
+                            <b>
+                            getTasksDueToday
+                            </b>
+                            <a href="#getTasksDueToday"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getTasksDueToday(tasks: <a href="../classes/Task.html">Task[]</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>tasks</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getTasksFinished"></a>
+                        <span class="name">
+                            <b>
+                            getTasksFinished
+                            </b>
+                            <a href="#getTasksFinished"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getTasksFinished(tasks: <a href="../classes/Task.html">Task[]</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:69</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>tasks</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getTasksNotDueToday"></a>
+                        <span class="name">
+                            <b>
+                            getTasksNotDueToday
+                            </b>
+                            <a href="#getTasksNotDueToday"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getTasksNotDueToday(tasks: <a href="../classes/Task.html">Task[]</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>tasks</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toggleView"></a>
+                        <span class="name">
+                            <b>
+                            toggleView
+                            </b>
+                            <a href="#toggleView"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>toggleView(change: MatButtonToggleChange)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:77</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>change</td>
+                                                        <td>
+                                                                    <code>MatButtonToggleChange</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cardView"></a>
+                        <span class="name">
+                            <b>
+                            cardView
+                            </b>
+                            <a href="#cardView"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>cardView:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="taskForm"></a>
+                        <span class="name">
+                            <b>
+                            taskForm
+                            </b>
+                            <a href="#taskForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>taskForm:     <code><a href="../classes/Task.html" target="_self" >TaskFormComponent</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Task.html" target="_self" >TaskFormComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(TaskFormComponent)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tasksDelayed"></a>
+                        <span class="name">
+                            <b>
+                            tasksDelayed
+                            </b>
+                            <a href="#tasksDelayed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>tasksDelayed:     <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tasksDueToday"></a>
+                        <span class="name">
+                            <b>
+                            tasksDueToday
+                            </b>
+                            <a href="#tasksDueToday"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>tasksDueToday:     <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tasksFinished"></a>
+                        <span class="name">
+                            <b>
+                            tasksFinished
+                            </b>
+                            <a href="#tasksFinished"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>tasksFinished:     <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tasksNotDueToday"></a>
+                        <span class="name">
+                            <b>
+                            tasksNotDueToday
+                            </b>
+                            <a href="#tasksNotDueToday"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>tasksNotDueToday:     <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Task.html" target="_self" >Task[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="today"></a>
+                        <span class="name">
+                            <b>
+                            today
+                            </b>
+                            <a href="#today"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>today:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.datePipe.transform(new Date(), &#x27;yyyy-MM-dd&#x27;)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="todayDate"></a>
+                        <span class="name">
+                            <b>
+                            todayDate
+                            </b>
+                            <a href="#todayDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>todayDate:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Date()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="todayDateMilli"></a>
+                        <span class="name">
+                            <b>
+                            todayDateMilli
+                            </b>
+                            <a href="#todayDateMilli"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>todayDateMilli:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Date(this.datePipe.transform(this.todayDate, &#x27;yyyy-MM-dd&#x27;)).getTime() as number</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pages/task/task-list/task-list.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { Router, ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { DatePipe } from &quot;@angular/common&quot;;
+
+import { TaskFormComponent } from &quot;../task-form/task-form.component&quot;;
+
+import { TaskService } from &quot;../../../core/services/task.service&quot;;
+import { GladService } from &quot;../../../core/services/glad.service&quot;;
+import { SharedService } from &quot;../../../core/services/shared.service&quot;;
+
+import { MatButtonToggleChange } from &quot;@angular/material&quot;;
+import { Status } from &#x27;src/app/shared/enums/status.enum&#x27;;
+import { Task } from &quot;../../../shared/models/task.model&quot;;
+
+@Component({
+	templateUrl: &#x27;./task-list.component.html&#x27;,
+	styleUrls: [&#x27;./task-list.component.scss&#x27;]
+})
+export class TaskListComponent implements OnInit {
+
+	@ViewChild(TaskFormComponent) taskForm: TaskFormComponent;
+
+	cardView: boolean &#x3D; true;
+
+	tasksDueToday: Task[] &#x3D; [];
+	tasksNotDueToday: Task[] &#x3D; [];
+	tasksDelayed: Task[] &#x3D; [];
+	tasksFinished: Task[] &#x3D; [];
+
+	today &#x3D; this.datePipe.transform(new Date(), &#x27;yyyy-MM-dd&#x27;);
+	todayDate &#x3D; new Date();
+	todayDateMilli &#x3D; new Date(this.datePipe.transform(this.todayDate, &#x27;yyyy-MM-dd&#x27;)).getTime() as number;
+
+	constructor(
+		private taskService: TaskService,
+		private gladService: GladService,
+		private sharedService: SharedService,
+		private router: Router,
+		private activateRoute: ActivatedRoute,
+		private datePipe: DatePipe) { }
+
+	ngOnInit() {
+		let tasksToMe &#x3D; this.activateRoute.snapshot.data[&#x27;tasksToMe&#x27;];
+
+		this.tasksDueToday &#x3D; this.getTasksDueToday(tasksToMe);
+		this.tasksNotDueToday &#x3D; this.getTasksNotDueToday(tasksToMe);
+		this.tasksDelayed &#x3D; this.getTasksDelayed(tasksToMe);
+		this.tasksFinished &#x3D; this.getTasksFinished(tasksToMe);
+	}
+
+	getTasksDueToday(tasks: Task[]): Task[] {
+		return tasks.filter(task &#x3D;&gt; this.datePipe.transform(task.dueDate, &#x27;yyyy-MM-dd&#x27;) &#x3D;&#x3D;&#x3D; this.today);
+	}
+	
+	getTasksNotDueToday(tasks: Task[]): Task[] {
+		return tasks.filter(task &#x3D;&gt; {
+			let taskDueDateMilli &#x3D; new Date(this.datePipe.transform(new Date(task.dueDate), &#x27;yyyy-MM-dd&#x27;)).getTime() as number;
+			return taskDueDateMilli &gt; this.todayDateMilli;
+		});
+	}
+
+	getTasksDelayed(tasks: Task[]): Task[] {
+		return tasks.filter(task &#x3D;&gt; {
+			let taskDueDateMilli &#x3D; new Date(this.datePipe.transform(new Date(task.dueDate), &#x27;yyyy-MM-dd&#x27;)).getTime() as number;
+			return taskDueDateMilli &lt; this.todayDateMilli;
+		});
+	}
+
+	getTasksFinished(tasks: Task[]): Task[] {
+		return tasks.filter(task &#x3D;&gt; task.status &#x3D;&#x3D;&#x3D; Status.CONCLUIDA).slice(0, 10);
+	}
+
+	addTask() {
+		this.router.navigate([&#x27;tasks&#x27;, &#x27;task-form&#x27;]);
+	}
+
+	toggleView(change: MatButtonToggleChange){
+		this.cardView &#x3D; change.value;
+	}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+
+	&lt;mat-button-toggle-group
+		[value]&#x3D;&quot;cardView&quot;
+		(change)&#x3D;&quot;toggleView($event)&quot;
+		name&#x3D;&quot;fontStyle&quot;
+		aria-label&#x3D;&quot;Font Style&quot;&gt;
+
+		&lt;mat-button-toggle [value]&#x3D;&quot;true&quot;&gt;
+			&lt;fa-icon icon&#x3D;&quot;th-large&quot;&gt;&lt;/fa-icon&gt;
+		&lt;/mat-button-toggle&gt;
+		&lt;mat-button-toggle [value]&#x3D;&quot;false&quot;&gt;
+			&lt;fa-icon icon&#x3D;&quot;bars&quot;&gt;&lt;/fa-icon&gt;
+		&lt;/mat-button-toggle&gt;
+	&lt;/mat-button-toggle-group&gt;
+
+	&lt;div *ngIf&#x3D;&quot;cardView; else gridView&quot;
+		fxLayout&#x3D;&quot;column&quot;
+		fxLayoutGap&#x3D;&quot;10px&quot;
+		class&#x3D;&quot;card-view-container&quot;&gt;
+
+		&lt;task-list-card-view
+			[tasksDueToday]&#x3D;&quot;tasksDueToday&quot;
+			[tasksNotDueToday]&#x3D;&quot;tasksNotDueToday&quot;
+			[tasksDelayed]&#x3D;&quot;tasksDelayed&quot;
+			[tasksFinished]&#x3D;&quot;tasksFinished&quot;&gt;
+		&lt;/task-list-card-view&gt;
+	&lt;/div&gt;
+
+	&lt;ng-template #gridView&gt;
+		&lt;task-list-grid-view *ngIf&#x3D;&quot;!cardView&quot;
+		                     [tasksDueToday]&#x3D;&quot;tasksDueToday&quot;
+		                     [tasksNotDueToday]&#x3D;&quot;tasksNotDueToday&quot;
+		                     [tasksDelayed]&#x3D;&quot;tasksDelayed&quot;
+		                     [tasksFinished]&#x3D;&quot;tasksFinished&quot;&gt;
+		&lt;/task-list-grid-view&gt;
+	&lt;/ng-template&gt;
+
+	&lt;button mat-fab class&#x3D;&quot;mat-fab--floating btn-green&quot; (click)&#x3D;&quot;addTask()&quot;&gt;
+		&lt;fa-icon icon&#x3D;&quot;plus&quot; size&#x3D;&quot;lg&quot; aria-label&#x3D;&quot;Add task button&quot;&gt;&lt;/fa-icon&gt;
+	&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./task-list.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.container {
+
+	mat-button-toggle-group {
+		position: absolute;
+		top: 20px;
+		right: 10px;
+
+		/deep/ .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+			line-height: 34px;
+			font-size: 17px;
+		}
+	}
+
+	.card-view-container {
+		margin-bottom: 50px;
+	}
+
+	gt-datatable {
+		/deep/ {
+			mat-table {
+				max-height: calc(100vh - 190px);
+				overflow: auto;
+			}
+		}
+	}
+}
+
+.card-container {
+	max-height: 320px;
+	overflow: auto;
+
+	task-card {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 959px) {
+
+	.card-container {
+		max-height: unset;
+		padding-bottom: 10px;
+	}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">	<mat-button-toggle-group		[value]="cardView"		(change)="toggleView($event)"		name="fontStyle"		aria-label="Font Style">		<mat-button-toggle [value]="true">			<fa-icon icon="th-large"></fa-icon>		</mat-button-toggle>		<mat-button-toggle [value]="false">			<fa-icon icon="bars"></fa-icon>		</mat-button-toggle>	</mat-button-toggle-group>	<div *ngIf="cardView; else gridView"		fxLayout="column"		fxLayoutGap="10px"		class="card-view-container">		<task-list-card-view			[tasksDueToday]="tasksDueToday"			[tasksNotDueToday]="tasksNotDueToday"			[tasksDelayed]="tasksDelayed"			[tasksFinished]="tasksFinished">		</task-list-card-view>	</div>	<ng-template #gridView>		<task-list-grid-view *ngIf="!cardView"		                     [tasksDueToday]="tasksDueToday"		                     [tasksNotDueToday]="tasksNotDueToday"		                     [tasksDelayed]="tasksDelayed"		                     [tasksFinished]="tasksFinished">		</task-list-grid-view>	</ng-template>	<button mat-fab class="mat-fab--floating btn-green" (click)="addTask()">		<fa-icon icon="plus" size="lg" aria-label="Add task button"></fa-icon>	</button></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DialogJustMockup', 'selector': 'dialog-just-mockup'},{'name': 'DueSoonTasksComponent', 'selector': 'due-soon-tasks'},{'name': 'GTDatatableComponent', 'selector': 'gt-datatable'},{'name': 'GTFormErrorComponent', 'selector': 'gt-form-error'},{'name': 'GTFormSuccessComponent', 'selector': 'gt-form-success'},{'name': 'GTNotificationComponent', 'selector': 'gt-notification'},{'name': 'GTSearchComponent', 'selector': 'gt-search'},{'name': 'GTTasksCarouselComponent', 'selector': 'gt-tasks-carousel'},{'name': 'GTToolbarComponent', 'selector': 'gt-toolbar'},{'name': 'GTUserLoggedInfoComponent', 'selector': 'gt-user-logged-info'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InboxComponent', 'selector': 'inbox'},{'name': 'InvitationComponent', 'selector': 'gt-invitation'},{'name': 'KanbanComponent', 'selector': ''},{'name': 'LoginComponent', 'selector': ''},{'name': 'PageNotFoundComponent', 'selector': ''},{'name': 'ProjectFormComponent', 'selector': 'project-form'},{'name': 'ProjectInfoComponent', 'selector': ''},{'name': 'ProjectsHomeComponent', 'selector': 'projects-home'},{'name': 'RecentTasksComponent', 'selector': 'recent-tasks'},{'name': 'SignupComponent', 'selector': ''},{'name': 'TaskCardComponent', 'selector': 'task-card'},{'name': 'TaskChangesComponent', 'selector': 'gt-task-changes'},{'name': 'TaskCommentsComponent', 'selector': 'gt-task-comments'},{'name': 'TaskComponent', 'selector': 'app-task'},{'name': 'TaskDetailComponent', 'selector': 'task-detail'},{'name': 'TaskFormComponent', 'selector': 'task-form'},{'name': 'TaskGridComponent', 'selector': 'task-grid'},{'name': 'TaskListCardViewComponent', 'selector': 'task-list-card-view'},{'name': 'TaskListComponent', 'selector': ''},{'name': 'TaskListGridViewComponent', 'selector': 'task-list-grid-view'},{'name': 'TaskNotFoundComponent', 'selector': 'app-task-not-found'},{'name': 'TaskPreviewComponent', 'selector': 'task-preview'},{'name': 'TasksPerStatusChartComponent', 'selector': 'tasks-per-status-chart'},{'name': 'TeamDetailComponent', 'selector': 'app-team-detail'},{'name': 'TeamFormComponent', 'selector': ''},{'name': 'TeamListSidenavComponent', 'selector': 'team-list-sidenav'},{'name': 'UserInfoComponent', 'selector': ''},{'name': 'UserListComponent', 'selector': 'app-user-list'},{'name': 'UserProjectDashboardComponent', 'selector': 'user-project-dashboard'}];
+    var DIRECTIVES = [{'name': 'AdminOnlyDirective', 'selector': '[adminOnly]'},{'name': 'LoggedOnlyDirective', 'selector': '[loggedOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'TaskListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TaskListComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,588 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gladtask-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gladtask-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>GTUserLoggedInfoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/components/gt-user-logged-info/gt-user-logged-info.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>gt-user-logged-info</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./gt-user-logged-info.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./gt-user-logged-info.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#userLogged">userLogged</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#logout">logout</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(domSanitizer: <a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank">DomSanitizer</a>, sharedService: <a href="../injectables/SharedService.html">SharedService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/components/gt-user-logged-info/gt-user-logged-info.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>domSanitizer</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank" >DomSanitizer</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sharedService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/SharedService.html" target="_self" >SharedService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="logout"></a>
+                        <span class="name">
+                            <b>
+                            logout
+                            </b>
+                            <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>logout()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/shared/components/gt-user-logged-info/gt-user-logged-info.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/shared/components/gt-user-logged-info/gt-user-logged-info.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userLogged"></a>
+                        <span class="name">
+                            <b>
+                            userLogged
+                            </b>
+                            <a href="#userLogged"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>userLogged:     <code><a href="../classes/User.html" target="_self" >User</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/User.html" target="_self" >User</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/components/gt-user-logged-info/gt-user-logged-info.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &quot;@angular/core&quot;;
+import { Router } from &quot;@angular/router&quot;;
+import { DomSanitizer } from &quot;@angular/platform-browser&quot;;
+
+import { SharedService } from &quot;../../../core/services/shared.service&quot;;
+import { User } from &quot;../../models/user.model&quot;;
+
+@Component({
+	selector: &#x27;gt-user-logged-info&#x27;,
+	templateUrl: &#x27;./gt-user-logged-info.component.html&#x27;,
+	styleUrls: [&#x27;./gt-user-logged-info.component.scss&#x27;]
+})
+export class GTUserLoggedInfoComponent implements OnInit {
+
+	userLogged: User;
+
+	constructor(
+		private domSanitizer: DomSanitizer,
+		private sharedService: SharedService,
+		private router: Router) {}
+
+	ngOnInit(): void {
+		this.userLogged &#x3D; this.sharedService.getUserLogged();
+	}
+
+	logout(): void {
+		this.sharedService.logout();
+		this.router.navigate([&#x27;/login&#x27;]);
+	}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;dropdown&quot;&gt;
+
+	&lt;div
+		fxLayout&#x3D;&quot;column&quot;
+		fxLayoutAlign&#x3D;&quot;center center&quot;
+		class&#x3D;&quot;dropdown__content&quot;&gt;
+
+		&lt;div
+			[style.background-image]&#x3D;&quot;userLogged.profilePhoto | makeTrustedImage: &#x27;style&#x27;&quot;
+			class&#x3D;&quot;image-rounded profile-photo&quot;&gt;
+		&lt;/div&gt;
+		&lt;span&gt;{{ userLogged.username }}&lt;/span&gt;
+		&lt;span class&#x3D;&quot;user-email&quot;&gt;{{ userLogged.email }}&lt;/span&gt;
+	&lt;/div&gt;
+
+	&lt;div
+		fxLayout&#x3D;&quot;row&quot;
+		fxLayoutAlign&#x3D;&quot;space-between center&quot;
+		class&#x3D;&quot;dropdown__button-container&quot;&gt;
+
+		&lt;button
+			mat-stroked-button
+			[routerLink]&#x3D;&quot;[&#x27;users&#x27;, &#x27;info&#x27;, userLogged.id]&quot;&gt;
+			Minha Conta
+		&lt;/button&gt;
+
+		&lt;button
+			mat-stroked-button
+			class&#x3D;&quot;button-logout&quot;
+			aria-label&#x3D;&quot;logout&quot;
+			(click)&#x3D;&quot;logout()&quot;&gt;
+			Sair
+		&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./gt-user-logged-info.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;../../../../variables&quot;;
+
+.dropdown {
+	position: relative;
+	z-index: 99998;
+	margin-top: 8px;
+	width: 290px;
+	text-align: center;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+
+	.dropdown__content {
+		padding: 10px;
+
+		.profile-photo {
+			margin-bottom: 10px;
+			width: 120px;
+			height: 120px;
+		}
+
+		.user-email {
+			font-size: .8rem;
+			color: $accent-darkest;
+		}
+	}
+
+	.dropdown__button-container {
+		padding: 10px 15px;
+		background-color: $primary-alpha-1;
+		border-top: 1px solid $primary-alpha-2;
+
+		button {
+			height: 32px;
+			line-height: 30px;
+			font-size: .8rem;
+			color: $accent-darkest;
+
+			&amp;.button-logout {
+				color: $primary;
+				border-color: $primary-alpha-2;
+			}
+		}
+	}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="dropdown">	<div		fxLayout="column"		fxLayoutAlign="center center"		class="dropdown__content">		<div			[style.background-image]="userLogged.profilePhoto | makeTrustedImage: \'style\'"			class="image-rounded profile-photo">		</div>		<span>{{ userLogged.username }}</span>		<span class="user-email">{{ userLogged.email }}</span>	</div>	<div		fxLayout="row"		fxLayoutAlign="space-between center"		class="dropdown__button-container">		<button			mat-stroked-button			[routerLink]="[\'users\', \'info\', userLogged.id]">			Minha Conta		</button>		<button			mat-stroked-button			class="button-logout"			aria-label="logout"			(click)="logout()">			Sair		</button>	</div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DialogJustMockup', 'selector': 'dialog-just-mockup'},{'name': 'DueSoonTasksComponent', 'selector': 'due-soon-tasks'},{'name': 'GTDatatableComponent', 'selector': 'gt-datatable'},{'name': 'GTFormErrorComponent', 'selector': 'gt-form-error'},{'name': 'GTFormSuccessComponent', 'selector': 'gt-form-success'},{'name': 'GTNotificationComponent', 'selector': 'gt-notification'},{'name': 'GTSearchComponent', 'selector': 'gt-search'},{'name': 'GTTasksCarouselComponent', 'selector': 'gt-tasks-carousel'},{'name': 'GTToolbarComponent', 'selector': 'gt-toolbar'},{'name': 'GTUserLoggedInfoComponent', 'selector': 'gt-user-logged-info'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InboxComponent', 'selector': 'inbox'},{'name': 'InvitationComponent', 'selector': 'gt-invitation'},{'name': 'KanbanComponent', 'selector': ''},{'name': 'LoginComponent', 'selector': ''},{'name': 'PageNotFoundComponent', 'selector': ''},{'name': 'ProjectFormComponent', 'selector': 'project-form'},{'name': 'ProjectInfoComponent', 'selector': ''},{'name': 'ProjectsHomeComponent', 'selector': 'projects-home'},{'name': 'RecentTasksComponent', 'selector': 'recent-tasks'},{'name': 'SignupComponent', 'selector': ''},{'name': 'TaskCardComponent', 'selector': 'task-card'},{'name': 'TaskChangesComponent', 'selector': 'gt-task-changes'},{'name': 'TaskCommentsComponent', 'selector': 'gt-task-comments'},{'name': 'TaskComponent', 'selector': 'app-task'},{'name': 'TaskDetailComponent', 'selector': 'task-detail'},{'name': 'TaskFormComponent', 'selector': 'task-form'},{'name': 'TaskGridComponent', 'selector': 'task-grid'},{'name': 'TaskListCardViewComponent', 'selector': 'task-list-card-view'},{'name': 'TaskListComponent', 'selector': ''},{'name': 'TaskListGridViewComponent', 'selector': 'task-list-grid-view'},{'name': 'TaskNotFoundComponent', 'selector': 'app-task-not-found'},{'name': 'TaskPreviewComponent', 'selector': 'task-preview'},{'name': 'TasksPerStatusChartComponent', 'selector': 'tasks-per-status-chart'},{'name': 'TeamDetailComponent', 'selector': 'app-team-detail'},{'name': 'TeamFormComponent', 'selector': ''},{'name': 'TeamListSidenavComponent', 'selector': 'team-list-sidenav'},{'name': 'UserInfoComponent', 'selector': ''},{'name': 'UserListComponent', 'selector': 'app-user-list'},{'name': 'UserProjectDashboardComponent', 'selector': 'user-project-dashboard'}];
+    var DIRECTIVES = [{'name': 'AdminOnlyDirective', 'selector': '[adminOnly]'},{'name': 'LoggedOnlyDirective', 'selector': '[loggedOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'GTUserLoggedInfoComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'GTUserLoggedInfoComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
